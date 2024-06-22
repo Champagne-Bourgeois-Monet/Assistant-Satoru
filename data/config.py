@@ -7,3 +7,5 @@ admins = [
     1031212769,
     1096326336
 ]
+
+#fhnsgd fwtreawsrfwera rty
