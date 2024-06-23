@@ -7,8 +7,10 @@ from aiogram.types import CallbackQuery
 from keyboards.inline.callback_datas import command_callback
 from keyboards.inline.start_buutons import mian_keyboard
 from loader import dp
+from utils.misc import rate_limit
 
 
+@rate_limit(5, 'help')
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
     if message.from_user.language_code == "ru":
