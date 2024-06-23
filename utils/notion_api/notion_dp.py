@@ -1,5 +1,7 @@
 import requests
-import data
+
+from data
+
 headers = {
     "Authorization": "Bearer " + NOTION_TOKEN,
     "Content-Type": "application/json",
