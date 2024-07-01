@@ -1,11 +1,22 @@
 # BOT TOKEN моего telegram бота.
-BOT_TOKEN = "6922327877:AAEw4qrZq5JWMM_S5cIg96MSqPYuJUlfVgs"
+import os
 
-# Id моего чата.
+from dotenv import load_dotenv
+
+load_dotenv()
+
+BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
+PGUSER = str(os.getenv("PGUSER"))
+PGPASSWORD = str(os.getenv("PGPASSWORD"))
+PGPORT = str(os.getenv("PGPORT"))
+PGDATABASE = str(os.getenv("PGDATABASE"))
+
 admins = [
     1478600655,
     1031212769,
     1096326336
 ]
 
-#fhnsgd fwtreawsrfwera rty
+ip = os.getenv("ip")
+
+
